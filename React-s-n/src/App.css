@@ -1,0 +1,205 @@
+.wrapper {
+ display: grid;
+ grid-template-areas:
+ "header header header"
+ "nav content content";
+ grid-template-rows: 60px 1fr;
+ grid-template-columns: 2fr 10fr;
+ grid-gap: 10px;
+}
+
+.wrapperHeader {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+
+}
+
+.logo {
+  width: 85px;
+  height: 65px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+.list li{
+  color: black;
+  list-style: none;
+  margin: 10px;
+  padding: 5px;
+}
+.list li a{
+  color: yellow;
+  text-decoration: none;
+  /* border: 1px dotted black; */
+  /* border-radius: 10px; */
+}
+
+.list li a:hover {
+  background-color: orange;
+}
+
+.wrapperAside {
+  grid-area: nav;
+  background-color: yellow;
+  height: 500px;
+  padding: 10px;
+}
+.listAside {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.avka {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.frien {
+  color: blue;
+  text-align: center;
+}
+
+.listAside li {
+  color: blue;
+  list-style: none;
+  margin: 15px;
+}
+
+.listAside li a {
+  text-decoration: none;
+}
+
+.listAside li a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.wrapperContent {
+  background-color: yellow;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.text_1 {
+  width: 100%;
+  text-align: center;
+  color: blue;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border: 2px solid aqua;
+}
+
+.userProfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.userInfo li {
+  list-style: none;
+  color: blue;
+}
+
+.label {
+  color: blue;
+  font-weight: 900;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+}
+
+.settings {
+  color: blue;
+  font-size: 20px;
+  text-align: center;
+}
+
+.friendsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.friendsList li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  margin: 5px;
+}
+
+.posts li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  color: blue;
+  width: 300px;
+}
+
+.wrapperFooter {
+  grid-area: footer;
+  background-color: yellow;
+  color: blue;
+}
+
+.wrapperFooter h4 {
+  text-align: center;
+}
+
+.wrapperFooter ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .wrapperFooter ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .avkaFooter {
+  width: 170px;
+  height: 70px;
+}
+
+.avkaFooterTwo {
+  width: 50px;
+  height: 50px;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
